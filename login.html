@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url('bglogin/aestetik.jpg');
+        /* background-image: linear-gradient(to left, rgb(217, 231, 235), white ); */
+      }
+
+      .halaman-login {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      }
+
+      .form {
+        width: 350px;
+        padding: 20px 30px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        box-shadow: 4px 4px 7px 3px rgb(194, 194, 194), -3px -3px 7px 2px rgb(194, 194, 194);
+      }
+
+      label {
+        display: block;
+      }
+
+      input {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 15px;
+        font-size: 0.8rem;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid rgb(126, 143, 223);
+        background-color: transparent;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      button {
+        width: 100%;
+        height: 35px;
+        display: block;
+        background-color: rgb(46, 46, 235);
+        color: white;
+        margin-top: 40px;
+        border: none;
+        border-radius: 20px;
+        font-weight: 600;
+      }
+
+      .form p {
+        font-size: 0.9rem;
+        display: inline-block;
+        margin-top: 13px;
+      }
+
+      .form a {
+        text-decoration: none;
+      }
+
+      .form a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="halaman-login">
+      <div class="form">
+        <img src="icon/remove.png" alt="" width="15%" />
+        <form action="">
+          <label for="email"><i class="far fa-envelope"></i> Email</label>
+          <input type="email" id="email" required />
+          <label for="password"><i class="fas fa-key"></i> password</label>
+          <input type="password" id="password" />
+          <button>LOGIN</button>
+          <p>Lupa Password ?</p>
+          <a href="daftar.html">Daftar</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
